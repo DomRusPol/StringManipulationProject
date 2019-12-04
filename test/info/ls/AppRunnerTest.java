@@ -10,7 +10,14 @@ class AppRunnerTest {
 	void testGetResult() {
 		
 		String result = AppRunner.getResult(12345,123);
-		assertEquals("  12345\n    123\n  _____\n  37035\n 24690 \n12345  \n_______\n1518435", AppRunner.getResult(12345, 123));
+		assertEquals("  12345\r\n" + 
+				"    123\r\n" + 
+				"  _____\r\n" + 
+				"  37035\r\n" + 
+				" 24690\r\n" + 
+				"12345\r\n" + 
+				"_______\r\n" + 
+				"1518435", AppRunner.getResult(12345, 123));
 	}
 
 }
